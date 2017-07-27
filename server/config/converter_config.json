@@ -1,0 +1,5 @@
+{
+  "app_id": "c9cbc18a12bf4c67a565d3337000b746",
+  "currencies": "https://openexchangerates.org/api/currencies.json",
+  "latest": "https://openexchangerates.org/api/latest.json"
+}

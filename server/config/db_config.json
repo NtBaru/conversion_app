@@ -1,0 +1,10 @@
+{
+  "client": "pg",
+  "connection": {
+    "user": "muzwyokj",
+    "password": "4c5xD0ucaWxbUoinWYhYcYeW1WurWn7l",
+    "database": "muzwyokj",
+    "host": "horton.elephantsql.com",
+    "port": "5432"
+  }
+}

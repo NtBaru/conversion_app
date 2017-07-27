@@ -1,0 +1,20 @@
+{
+  "name": "conversion_app",
+  "version": "1.0.0",
+  "description": "Simple currency conversion app with react frontend and Node.js backend",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "Barbora Nétková",
+  "license": "ISC",
+  "dependencies": {
+    "bookshelf": "^0.10.4",
+    "hapi": "^16.5.0",
+    "joi": "^10.6.0",
+    "knex": "^0.13.0",
+    "pg": "^7.0.2",
+    "wreck": "^12.2.2"
+  }
+}
