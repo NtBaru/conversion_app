@@ -16,20 +16,3 @@ function getStats(next) {
         }
     )
 }
-
-function getCurrencies(next) {
-    Wreck.get(converterConfig.currencies, (err, res, payload) => {
-        if (err) { return next(err); }
-
-        var avaiableCurrencies = JSON.parse(payload);
-
-        var currecies = Object.keys(avaiableCurrencies).map((shortcut) => {
-            return {
-                shortcut: shortcut,
-                name: avaiableCurrencies[shortcut]
-            }
-        })
-
-        return next(null, currecies);
-    });
-}
