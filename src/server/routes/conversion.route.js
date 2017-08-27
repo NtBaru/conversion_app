@@ -1,5 +1,4 @@
-var statsService = require('../services/stats.service');
-var conversionService = require('../services/conversion.service');
+const conversionService = require('../services/conversion.service');
 
 module.exports = function (server) {
     server.route({
@@ -12,7 +11,7 @@ module.exports = function (server) {
                     return reply({ error: error.message }).code(error.code);
                 }
                 return reply(result);
-            })
+            });
 
         }
     });
@@ -28,5 +27,5 @@ module.exports = function (server) {
                 return reply(result);
             });
         }
-    })
-}
+    });
+};

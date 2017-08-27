@@ -1,4 +1,4 @@
-var statsService = require('../services/stats.service');
+const statsService = require('../services/stats.service');
 
 module.exports = function (server) {
     server.route({
@@ -11,7 +11,7 @@ module.exports = function (server) {
                     return reply({ error: error.message }).code(error.code);
                 }
                 return reply(result);
-            })
+            });
         }
     });
-}
+};
